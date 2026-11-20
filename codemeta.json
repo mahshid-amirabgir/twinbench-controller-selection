@@ -1,0 +1,82 @@
+{
+  "@context": "https://w3id.org/codemeta/3.0",
+  "@type": "SoftwareSourceCode",
+  "name": "TwinBench: Multi-Fidelity Benchmarking for Controller Selection in 6-DOF Industrial Manipulators",
+  "description": "Code, data and scripts that regenerate every table and figure of the TwinBench paper: four controllers (PD+g, CTC-PD, CTC-SMC, PBC) on six 6-DOF industrial manipulators, three datasheet robots at a decoupled proxy tier and three URDF robots at both the proxy and a Pinocchio rigid-body tier, under three parametric uncertainty levels. The robot descriptions in urdf_models/ are third-party files under their upstream BSD and Apache-2.0 licenses.",
+  "version": "1.0.0",
+  "identifier": "https://doi.org/10.5281/zenodo.24407565",
+  "dateModified": "2026-11-20",
+  "license": "https://spdx.org/licenses/MIT",
+  "codeRepository": "https://github.com/mahshid-amirabgir/twinbench-controller-selection",
+  "programmingLanguage": "Python",
+  "runtimePlatform": "Python 3.11",
+  "softwareRequirements": [
+    "pin 3.9.0 (rigid-body tier; requires numpy < 2.4)",
+    "numpy >= 2.3",
+    "pandas >= 2.2",
+    "scipy >= 1.14",
+    "matplotlib >= 3.9",
+    "pyyaml >= 6.0"
+  ],
+  "keywords": [
+    "robotics",
+    "benchmarking",
+    "simulation",
+    "controller evaluation",
+    "digital twin",
+    "multi-fidelity"
+  ],
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Mahshid",
+      "familyName": "Amirabgir",
+      "@id": "https://orcid.org/0009-0006-4849-2624",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "University of Rome Tor Vergata"
+      }
+    },
+    {
+      "@type": "Person",
+      "givenName": "Mahdieh",
+      "familyName": "Amirabgir",
+      "@id": "https://orcid.org/0009-0005-0615-1058",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Politecnico di Milano"
+      }
+    },
+    {
+      "@type": "Person",
+      "givenName": "Giancarlo",
+      "familyName": "Orengo",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "University of Rome Tor Vergata"
+      },
+      "@id": "https://orcid.org/0000-0003-1044-2999"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Behrooz",
+      "familyName": "Khalil Loo",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "University of Iowa"
+      },
+      "@id": "https://orcid.org/0000-0002-1638-9925"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Amir",
+      "familyName": "Aghsami",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Ankara Yıldırım Beyazıt University"
+      },
+      "@id": "https://orcid.org/0000-0003-0175-2979"
+    }
+  ],
+  "datePublished": "2026-11-20"
+}

@@ -1,0 +1,43 @@
+{
+  "title": "TwinBench: Multi-Fidelity Benchmarking for Controller Selection in 6-DOF Industrial Manipulators",
+  "description": "Code, data and scripts that regenerate every table and figure of the TwinBench paper: four controllers (PD+g, CTC-PD, CTC-SMC, PBC) on six 6-DOF industrial manipulators, three datasheet robots at a decoupled proxy tier and three URDF robots at both the proxy and a Pinocchio rigid-body tier, under three parametric uncertainty levels. The robot descriptions in urdf_models/ are third-party files under their upstream BSD and Apache-2.0 licenses.",
+  "version": "1.0.0",
+  "creators": [
+    {
+      "name": "Amirabgir, Mahshid",
+      "affiliation": "University of Rome Tor Vergata",
+      "orcid": "0009-0006-4849-2624"
+    },
+    {
+      "name": "Amirabgir, Mahdieh",
+      "affiliation": "Politecnico di Milano",
+      "orcid": "0009-0005-0615-1058"
+    },
+    {
+      "name": "Orengo, Giancarlo",
+      "affiliation": "University of Rome Tor Vergata",
+      "orcid": "0000-0003-1044-2999"
+    },
+    {
+      "name": "Khalil Loo, Behrooz",
+      "affiliation": "University of Iowa",
+      "orcid": "0000-0002-1638-9925"
+    },
+    {
+      "name": "Aghsami, Amir",
+      "affiliation": "Ankara Yıldırım Beyazıt University",
+      "orcid": "0000-0003-0175-2979"
+    }
+  ],
+  "keywords": [
+    "robotics",
+    "benchmarking",
+    "control",
+    "simulation",
+    "digital twin",
+    "reproducibility"
+  ],
+  "license": "mit",
+  "upload_type": "software",
+  "access_right": "open"
+}

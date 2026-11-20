@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "TwinBench: Multi-Fidelity Benchmarking for Controller Selection in 6-DOF Industrial Manipulators"
+type: software
+authors:
+  - family-names: "Amirabgir"
+    given-names: "Mahshid"
+    orcid: "https://orcid.org/0009-0006-4849-2624"
+    affiliation: "Department of Electronic Engineering, University of Rome Tor Vergata, Via del Politecnico 1, 00133 Rome, Italy"
+  - family-names: "Amirabgir"
+    given-names: "Mahdieh"
+    orcid: "https://orcid.org/0009-0005-0615-1058"
+    affiliation: "Department of Civil and Environmental Engineering (DICA), Politecnico di Milano, Piazza Leonardo da Vinci 32, 20133 Milan, Italy"
+  - family-names: "Orengo"
+    given-names: "Giancarlo"
+    orcid: "https://orcid.org/0000-0003-1044-2999"
+    affiliation: "Department of Electronic Engineering, University of Rome Tor Vergata, Via del Politecnico 1, 00133 Rome, Italy"
+  - family-names: "Khalil Loo"
+    given-names: "Behrooz"
+    orcid: "https://orcid.org/0000-0002-1638-9925"
+    affiliation: "Department of Statistics and Actuarial Science, University of Iowa, 241 Schaeffer Hall, 20 East Washington Street, Iowa City, IA 52242-1409, USA"
+  - family-names: "Aghsami"
+    given-names: "Amir"
+    orcid: "https://orcid.org/0000-0003-0175-2979"
+    affiliation: "Department of Industrial Engineering, Ankara Yıldırım Beyazıt University, 06010 Ankara, Turkey"
+repository-code: "https://github.com/mahshid-amirabgir/twinbench-controller-selection"
+license: "MIT"
+version: "1.0.0"
+date-released: "2026-11-20"
+doi: "10.5281/zenodo.24407565"
+keywords:
+  - robotics
+  - benchmarking
+  - simulation
+  - controller evaluation
+  - digital twin
+  - multi-fidelity

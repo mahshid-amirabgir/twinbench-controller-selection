@@ -1,0 +1,29 @@
+# Optional: `pip install -e .` installs twinbench. Not required: the scripts under
+# experiments/ and analysis/ add src/ to sys.path themselves.
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "twinbench"
+version = "1.0.0"
+description = "Multi-fidelity controller benchmark for 6-DOF industrial manipulators: 4 controllers, 6 robots, proxy and rigid-body (Pinocchio) dynamics, 3 uncertainty levels"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+dependencies = ["numpy>=2.3,<3", "pandas>=2.2", "scipy>=1.14", "matplotlib>=3.9", "pyyaml>=6.0"]
+
+[project.optional-dependencies]
+test = ["pytest>=8.0"]
+rigid = ["pin==3.9.0", "numpy<2.4", "cmeel-urdfdom<5", "cmeel-tinyxml2<11"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning:hppfcl", "ignore::DeprecationWarning:coal"]
+
+[project.urls]
+Homepage = "https://github.com/mahshid-amirabgir/twinbench-controller-selection"
+Repository = "https://github.com/mahshid-amirabgir/twinbench-controller-selection"

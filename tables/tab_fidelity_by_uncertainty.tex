@@ -1,0 +1,19 @@
+\begin{tabular}{lccc}
+\toprule
+Statistic & Nominal & Heavy & Light \\
+\midrule
+Subset $\taub$ & 1.000 & 0.333 & 0.778 \\
+Four-controller $\taub$ & 0.889 & 0.667 & 0.889 \\
+Top-controller disagreement (subset) & 0/12 & 8/12 & 4/12 \\
+\midrule
+Proxy ranking, nominal & \multicolumn{3}{l}{PBC $<$ CTC-SMC $<$ CTC-PD $<$ PD+g} \\
+Proxy ranking, heavy & \multicolumn{3}{l}{PBC $<$ CTC-PD $<$ PD+g $<$ CTC-SMC} \\
+Proxy ranking, light & \multicolumn{3}{l}{PBC $<$ PD+g $<$ CTC-PD $<$ CTC-SMC} \\
+Rigid-body ranking, nominal & \multicolumn{3}{l}{PBC $<$ CTC-SMC $<$ CTC-PD $<$ PD+g} \\
+Rigid-body ranking, heavy & \multicolumn{3}{l}{PBC $<$ CTC-SMC $<$ CTC-PD $<$ PD+g} \\
+Rigid-body ranking, light & \multicolumn{3}{l}{PBC $<$ PD+g $<$ CTC-PD $<$ CTC-SMC} \\
+\midrule
+Nominal+heavy pooled: subset $\taub$ & \multicolumn{3}{l}{0.667 [0.333, 1.000], disagreement 8/24} \\
+Nominal+heavy pooled: four-controller $\taub$ & \multicolumn{3}{l}{0.778 [0.500, 1.000]} \\
+\bottomrule
+\end{tabular}

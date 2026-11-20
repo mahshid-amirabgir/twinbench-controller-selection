@@ -1,0 +1,30 @@
+# TwinBench -- pip dependency set.
+#
+# On Linux / Python 3.11 this set resolves to
+#   pin 3.9.0   numpy 2.3.5   pandas 3.0.1   scipy 1.17.1   matplotlib 3.10.8
+#   pyyaml 6.0.3   pytest 9.0.3
+# which is the environment the committed results were produced in. The conda
+# environment in environment.yml (numpy 2.4.3) agrees with it to ~1e-10 relative
+# on convergent runs.
+#
+# Notes on the Pinocchio wheel ("pin"):
+#   * It is pinned to 3.9.0 -- the rigid-body tier depends on Pinocchio's ABA/CRBA,
+#     and an unpinned `pin>=3.9` now installs Pinocchio 4.x.
+#   * pin 3.9.0 requires numpy < 2.4, hence the numpy bound below.
+#   * pin 3.9.0 was built against urdfdom 4 / tinyxml2 10; newer cmeel builds of
+#     those two packages break `import pinocchio`, so they are pinned too.
+#   * No Windows wheel: on Windows use the conda environment.
+
+numpy>=2.3,<2.4
+pandas>=2.2
+scipy>=1.14
+matplotlib>=3.9
+pyyaml>=6.0
+
+# Rigid-body tier
+pin==3.9.0 ; platform_system != "Windows"
+cmeel-urdfdom<5 ; platform_system != "Windows"
+cmeel-tinyxml2<11 ; platform_system != "Windows"
+
+# Test suite
+pytest>=8.0

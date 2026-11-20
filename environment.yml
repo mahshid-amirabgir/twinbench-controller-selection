@@ -1,0 +1,22 @@
+# Conda environment for TwinBench (recommended -- pinocchio installs cleanly here).
+#
+#   conda env create -f environment.yml
+#   conda activate twinbench
+#
+# pinocchio is pinned exactly because the rigid-body tier depends on its ABA/CRBA
+# implementation. The committed results were produced with the pip set in
+# requirements.txt (same pinocchio, numpy 2.3.5); both environments agree to
+# ~1e-10 relative on convergent runs.
+name: twinbench
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pinocchio=3.9.0
+  - numpy=2.4.3
+  - pandas=3.0.1
+  - scipy=1.17.1
+  - matplotlib=3.10.8
+  - pyyaml=6.0.3
+  - pytest=9.0.3
+  - pip
